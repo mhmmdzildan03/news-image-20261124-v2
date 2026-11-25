@@ -11,12 +11,16 @@ Tuesday 24 November 2026, built for make.fun's "Sum up 24 November's
 world news in one image" bounty.
 
 **Design:** a disciplined broadsheet — the date as the biggest type on
-the page, three illustrated lead stories, a grid of five more, a
-day-in-numbers strip, a status chip (CONFIRMED / OFFICIAL / REPORTED)
-and a basis line on every story, and a date-check box stating that only
-Tuesday's news is on the page. Organized density, kept legible: fewer,
-larger stories rather than a wall of microtext. (An earlier hero-poster
-design is kept in the repo as generate.py.)
+the page, three illustrated lead stories, a grid of six more, and an
+"Also on Tuesday" list of fourteen one-line stories: 23 stories in
+all, every one dated Tuesday 24 November 2026 and verified against
+that day's reporting (Reuters, AP, the BBC, the Kyiv Independent and
+others). Every story carries a status chip (CONFIRMED / OFFICIAL /
+REPORTED / CLAIM) and its source by name; a day-in-numbers strip sits
+under the masthead, and a date-check box names the Monday stories
+deliberately left out. Organized density, kept legible — headlines
+stay readable at thumbnail size. (Earlier designs are kept in the
+repo as generate.py and broadsheet.py.)
 
 - **Hero:** COP31 in Antalya ended with no deal and the world reacted
   in anger on day two — Guterres "deeply disappointed", the EU calling
@@ -41,5 +45,5 @@ python3 main.py            # writes /output/entry.png (or $MAKEFUN_OUTPUT_DIR)
 ```
 
 `main.py` is standard-library only and copies the bundled `entry.png`
-byte for byte. The page itself is rendered by `broadsheet.py` (Pillow),
-kept here so the whole build is inspectable.
+byte for byte. The page itself is rendered by `broadsheet2.py`
+(Pillow), kept here so the whole build is inspectable.
