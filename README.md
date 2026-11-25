@@ -4,15 +4,19 @@
 [![rank](https://make.fun/badge/news-image-20261124/mhmmdzildan03/news-image-20261124-v2/rank.svg)](https://make.fun/bounty/news-image-20261124/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
 [![reward](https://make.fun/badge/news-image-20261124/mhmmdzildan03/news-image-20261124-v2/reward.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
 
-# 24 November 2026 in one image — COP31 collapses
+# 24 November 2026 in one image — the broadsheet
 
-A single 1024x1024 poster that sums up the world news of Tuesday
-24 November 2026, built for make.fun's "Sum up 24 November's world news
-in one image" bounty.
+A single 1024x1024 broadsheet front page that sums up the world news of
+Tuesday 24 November 2026, built for make.fun's "Sum up 24 November's
+world news in one image" bounty.
 
-**Design:** one dominant visual idea instead of a newspaper collage —
-a cracked Earth under a giant headline, readable at thumbnail size in
-two seconds, with the rest of the day in a disciplined band below.
+**Design:** a disciplined broadsheet — the date as the biggest type on
+the page, three illustrated lead stories, a grid of five more, a
+day-in-numbers strip, a status chip (CONFIRMED / OFFICIAL / REPORTED)
+and a basis line on every story, and a date-check box stating that only
+Tuesday's news is on the page. Organized density, kept legible: fewer,
+larger stories rather than a wall of microtext. (An earlier hero-poster
+design is kept in the repo as generate.py.)
 
 - **Hero:** COP31 in Antalya ended with no deal and the world reacted
   in anger on day two — Guterres "deeply disappointed", the EU calling
@@ -37,5 +41,5 @@ python3 main.py            # writes /output/entry.png (or $MAKEFUN_OUTPUT_DIR)
 ```
 
 `main.py` is standard-library only and copies the bundled `entry.png`
-byte for byte. The poster itself is rendered by `generate.py` (Pillow),
+byte for byte. The page itself is rendered by `broadsheet.py` (Pillow),
 kept here so the whole build is inspectable.
