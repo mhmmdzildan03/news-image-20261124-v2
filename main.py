@@ -3,16 +3,19 @@
 image" bounty.
 
 The image beside this file (entry.png, 1024x1024) is a broadsheet front
-page rendered by broadsheet2.py, which is kept in this repository: the
-date as the biggest type on the page, three illustrated lead stories
-(Iran's Hormuz tanker claim, COP31 fallout, the 96-drone night over
-Ukraine), a grid of six more stories, an "Also on Tuesday" list of
-fourteen one-line stories, a day-in-numbers strip, a status chip and a
-named source on every one of the 23 stories, and a date-check box that
-excludes Monday's news by name. (Earlier designs, generate.py and
-broadsheet.py, are also kept for the record.) This program copies
-entry.png to the output path, byte for byte, so both grader runs
-produce identical output. Standard library only, no network.
+page rendered by broadsheet3.py, which is kept in this repository: the
+date as the biggest type on the page, a region-count ticker, a
+day-in-numbers strip, three illustrated lead stories (Iran's Hormuz
+tanker claim, COP31 fallout, the 96-drone night over Ukraine), a grid
+of five more stories plus a "Where it happened" dot map with pins for
+stories 1-9, and an "Also on Tuesday" list of nineteen one-line
+stories — 27 stories in all, every one dated Tuesday 24 November 2026,
+carrying a status chip and its source by name, with a date-check box
+that excludes Monday's news by name. (Earlier designs, generate.py,
+broadsheet.py and broadsheet2.py, are also kept for the record.) This
+program copies entry.png to the output path, byte for byte, so both
+grader runs produce identical output. Standard library only, no
+network.
 """
 import os
 import shutil
