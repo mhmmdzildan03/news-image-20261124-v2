@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """Entry program for make.fun's "Sum up 24 November's world news in one
-image" bounty (v2, hero-led poster).
+image" bounty.
 
-The poster beside this file (entry.png, 1024x1024) was rendered by
-generate.py, which is kept in this repository: a cracked Earth under a
-giant COP31 headline, over four story tiles (Banten factory fire, Brent
-crude at $89.37, strikes on Kyiv, and the Gukesh-Sindarov world chess
-title match). This program copies that image to the output path, byte
-for byte, so both grader runs produce identical output. Standard
-library only, no network.
+The image beside this file (entry.png, 1024x1024) is a broadsheet front
+page rendered by broadsheet.py, which is kept in this repository: the
+date as the biggest type on the page, three illustrated lead stories
+(COP31 fallout, the Banten factory fire toll, strikes on Kyiv), a grid
+of five more stories, a day-in-numbers strip, a status chip and basis
+line on every story, and a date-check box. (An earlier hero-poster
+design, generate.py, is also kept for the record.) This program copies
+entry.png to the output path, byte for byte, so both grader runs
+produce identical output. Standard library only, no network.
 """
 import os
 import shutil
